@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f8f4">
+  <meta name="description" content="Próximamente: hoteles, cabañas y opciones de hospedaje en Pérez Zeledón.">
+  <title>Hospedaje — GUIAPZ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="enhancements.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html#inicio" aria-label="GUIAPZ inicio"><img class="brand-logo" src="images/guiapz-logo.svg" alt="GUIAPZ"></a>
+    <nav class="desktop-nav" aria-label="Principal"><a href="index.html#inicio">Inicio</a><a href="directorio.html">Directorio Comercial</a><a class="active" href="hospedaje.html" aria-current="page">Hospedaje</a><a href="propiedades.html">Propiedades</a><a href="alquileres.html">Alquileres</a><a href="contactanos.html">Contacto</a></nav>
+    <div class="header-actions"><a class="properties-home-link" href="index.html">Volver a GUIAPZ</a><button class="theme-toggle" id="themeToggle" type="button" aria-label="Activar modo oscuro" title="Activar modo oscuro"><span class="theme-icon">☾</span><span class="theme-label">Modo oscuro</span></button></div>
+  </header>
+
+  <main class="lodging-main">
+    <section class="lodging-hero" aria-labelledby="lodgingTitle">
+      <div class="lodging-copy"><div class="eyebrow"><span class="live-dot"></span> DESCANSÁ Y DESCUBRÍ PÉREZ ZELEDÓN</div><h1 id="lodgingTitle">Un lugar para<br><em>sentirte como en casa.</em></h1><p>Pronto encontrarás opciones de hospedaje para explorar el cantón a tu ritmo.</p></div>
+      <div class="lodging-illustration" aria-hidden="true"><span class="lodging-sun"></span><span class="lodging-mountain lodging-mountain-back"></span><span class="lodging-mountain lodging-mountain-front"></span><span class="lodging-cabin">⌂</span></div>
+    </section>
+    <aside class="lodging-empty-note" aria-label="Sin hospedajes publicados todavía"><span class="lodging-empty-icon" aria-hidden="true">i</span><p><strong>Aún no hay hospedajes publicados.</strong> ¿Conocés uno que debería estar aquí?</p><a href="contactanos.html">Sugerir un hospedaje <span aria-hidden="true">↗</span></a></aside>
+    <section class="lodging-listings" aria-labelledby="lodgingListingsTitle">
+      <div class="property-listings-heading"><div><div class="eyebrow muted">CATÁLOGO EN PREPARACIÓN</div><h2 id="lodgingListingsTitle">Opciones que podrás encontrar</h2></div><p>Cada ficha será agregada y revisada por el creador de GUIAPZ.</p></div>
+      <div class="lodging-grid">
+        <article class="lodging-card"><span class="lodging-card-icon" aria-hidden="true">⌂</span><div><b>Hoteles y hostales</b><p>Habitaciones, servicios, ubicación y formas de contacto.</p><small>FICHAS PENDIENTES</small></div></article>
+        <article class="lodging-card"><span class="lodging-card-icon" aria-hidden="true">♨</span><div><b>Cabañas y hospedaje rural</b><p>Estadías rodeadas de naturaleza, montañas y tranquilidad.</p><small>FICHAS PENDIENTES</small></div></article>
+        <article class="lodging-card"><span class="lodging-card-icon" aria-hidden="true">✳</span><div><b>Hospedajes especiales</b><p>Opciones para viajes familiares, aventura y escapadas.</p><small>FICHAS PENDIENTES</small></div></article>
+      </div>
+    </section>
+    <section class="lodging-contact"><div><div class="eyebrow muted">¿TENÉS UN HOSPEDAJE?</div><h2>¿Te gustaría aparecer en esta guía?</h2><p>Escribime para compartir la información de tu hospedaje.</p></div><a href="contactanos.html">Escribime <span>↗</span></a></section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="index.html#inicio"><img class="brand-logo" src="images/guiapz-logo.svg" alt="GUIAPZ"></a><a class="footer-properties-link" href="directorio.html">Ver directorio comercial</a><span class="footer-made">Hecho con cariño en Pérez Zeledón <b>♥</b></span><span>© <span id="propertiesYear"></span> GUIAPZ</span></footer>
+  <script src="properties.js"></script>
+</body>
+</html>

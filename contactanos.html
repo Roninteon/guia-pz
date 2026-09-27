@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f8f4">
+  <meta name="description" content="Contactá a GUIAPZ para consultas, sugerencias o información sobre el directorio de Pérez Zeledón.">
+  <title>Contacto — GUIAPZ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="enhancements.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html#inicio" aria-label="GUIAPZ inicio"><img class="brand-logo" src="images/guiapz-logo.svg" alt="GUIAPZ"></a>
+    <nav class="desktop-nav" aria-label="Principal"><a href="index.html#inicio">Inicio</a><a href="directorio.html">Directorio Comercial</a><a href="hospedaje.html">Hospedaje</a><a href="propiedades.html">Propiedades</a><a href="alquileres.html">Alquileres</a><a class="active" href="contactanos.html" aria-current="page">Contacto</a></nav>
+    <div class="header-actions"><a class="properties-home-link" href="index.html">Volver a GUIAPZ</a><button class="theme-toggle" id="themeToggle" type="button" aria-label="Activar modo oscuro" title="Activar modo oscuro"><span class="theme-icon">☾</span><span class="theme-label">Modo oscuro</span></button></div>
+  </header>
+
+  <main class="contact-page-main">
+    <section class="contact-page-intro"><div class="eyebrow"><span class="live-dot"></span> ESTAMOS PARA ESCUCHARTE</div><h1>Hablemos de <em>Pérez Zeledón.</em></h1><p>¿Tenés una consulta, una sugerencia o una idea para la guía? Me gustaría leerte.</p></section>
+    <section class="contact-form-card" aria-labelledby="contactFormTitle">
+      <h2 id="contactFormTitle">ESCRIBIME</h2>
+      <p class="contact-form-lead">Dejá tus datos y contame cómo puedo ayudarte.</p>
+      <form id="contactForm">
+        <label class="visually-hidden" for="contactName">Nombre completo (requerido)</label>
+        <input id="contactName" name="name" type="text" placeholder="Nombre Completo (Requerido)" autocomplete="name" required>
+        <div class="contact-form-row"><label class="visually-hidden" for="contactEmail">Email (requerido)</label><input id="contactEmail" name="email" type="email" placeholder="Email (Requerido)" autocomplete="email" required><label class="visually-hidden" for="contactPhone">Teléfono (opcional)</label><input id="contactPhone" name="phone" type="tel" placeholder="Teléfono" autocomplete="tel"></div>
+        <label class="visually-hidden" for="contactMessage">Comentarios (requerido)</label>
+        <textarea id="contactMessage" name="message" placeholder="Comentarios (Requerido)" required></textarea>
+        <button type="submit">ENVIAR</button>
+      </form>
+      <p class="contact-form-note"><span id="contactFormStatus" aria-live="polite">Este formulario prepara un correo en tu dispositivo; revisalo y envialo desde tu aplicación.</span> Si no se abre, probá <a class="contact-email" href="mailto:Roninteon@gmail.com">abrir tu aplicación de correo</a>.</p>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="index.html#inicio"><img class="brand-logo" src="images/guiapz-logo.svg" alt="GUIAPZ"></a><a class="footer-properties-link" href="directorio.html">Volver al directorio</a><span class="footer-made">Hecho con cariño en Pérez Zeledón <b>♥</b></span><span>© <span id="propertiesYear"></span> GUIAPZ</span></footer>
+  <script src="properties.js"></script>
+  <script src="contact.js"></script>
+</body>
+</html>
